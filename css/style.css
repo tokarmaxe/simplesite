@@ -112,6 +112,7 @@ footer p{
 .photo-item img:hover{
     filter: grayscale(0%);
     transform: scale(1.1);
+    cursor: pointer;
 }
 .blog-container {
     background: #fafafa;
@@ -199,6 +200,53 @@ footer p{
 #map{
     width: 100%;
     height: 400px;
+}
+.form{
+    width: 50%;
+    margin:50px auto;
+}
+.feedback-input{
+    color: #000;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    background-color: #fff;
+    padding: 13px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 0px solid transparent;
+    border-bottom: 1px solid black;
+}
+textarea{
+    width: 100%;
+    height: 150px;
+    resize: vertical;
+}
+.button-submit{
+    float: left;
+    width: 100%;
+    border: 0px solid transparent;
+    cursor: pointer;
+    background-color: #000;
+    color: white;
+    font-size: 18px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    transition: all 0.3s;
+    margin-top: -4px;
+    font-weight: 300;
+}
+.button-submit:hover{
+    background-color: white;
+    color: #000;
+    border: 1px solid #000;
+}
+.easy{
+    width: 0;
+    height: 74px;
+    background-color: #fbfbfb;
+    transition: 0.3s ease;
 }
 @media screen and (max-width:768px) {
     .topnav a:not(:first-child){
