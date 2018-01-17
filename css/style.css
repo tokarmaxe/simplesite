@@ -102,7 +102,7 @@ footer p{
     margin-bottom: 50px;
 }
 .photo-item{
-    width: 30%;
+    width: 25%;
 }
 .photo-item img{
     box-sizing: border-box;
@@ -111,6 +111,94 @@ footer p{
 }
 .photo-item img:hover{
     filter: grayscale(0%);
+    transform: scale(1.1);
+}
+.blog-container {
+    background: #fafafa;
+    border-radius: 5px;
+    box-shadow: rgba(0,0,0,0.2) 0 4px 2px -2px;
+    font-weight: 100;
+    margin: 48px auto;
+    width: 50rem;
+}
+.blog-container a:hover
+{
+    border-color: #ff4d5d;
+    color: #ff4d4d;
+}
+.blog-cover{
+    background: url(../img/mountains.jpg);
+    background-size: cover;
+    border-radius: 5px 5px 0 0;
+    height: 15rem;
+    box-shadow: inset rgba(0,0,0,0.2) 0 64px 64px 16px;
+}
+.blog-body{
+    margin: 0 auto;
+    width: 80%;
+}
+.blog-title{
+    color: #333;
+    font-weight: 100;
+}
+.blog-text{
+    color: #4d4d4d;
+}
+.blog-tags ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-left: 0;
+}
+.blog-tags li+li{
+    margin-left:0.5rem;
+}
+.blog-tags a{
+    border: 1px solid #999999;
+    border-radius: 3px;
+    color:#999999;
+    font-size:.75rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    padding: 0 .5rem;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+    width: 5rem;
+}
+.blog-footer{
+    border-top: 1px;
+    margin: 0 auto;
+    padding-bottom: 0.125rem;
+    width: 80%;
+}
+.blog-footer ul{
+    list-style: none;
+    display: flex;
+    flex: row wrap;
+    justify-content: flex-end;
+    padding-left: 0;
+}
+.blog-footer li{
+    color: #999999;
+    font-size: .75rem;
+    height: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    white-space: nowrap;
+
+}
+.published-date{
+    border: 1px solid #999999;
+    border-radius: 3px;
+    padding: 0 0.5rem;
+}
+#map{
+    width: 100%;
+    height: 400px;
 }
 @media screen and (max-width:768px) {
     .topnav a:not(:first-child){
@@ -145,6 +233,9 @@ footer p{
         width: 45%;
         margin-left: 10px;
     }
+    .blog-container{
+        width: 28rem;
+    }
 }
 @media screen and (max-width:470px){
     .advantages{
@@ -156,5 +247,8 @@ footer p{
     .photo-item{
         width: 90%;
         margin-left: 10px;
+    }
+    .blog-container{
+        width: 20rem;
     }
 }
