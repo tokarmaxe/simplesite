@@ -248,6 +248,32 @@ textarea{
     background-color: #fbfbfb;
     transition: 0.3s ease;
 }
+.about-container{
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+}
+.about-container img{
+    max-width: 100%;
+}
+.about-container p{
+    margin-top: 50px;
+}
+.services{
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+}
+.services img{
+    max-width: 100%;
+}
+.services-container{
+    margin-top: 50px;
+    display:grid;
+    grid-template-columns: auto auto;
+    grid-gap: 50px 100px;
+}
+
 @media screen and (max-width:768px) {
     .topnav a:not(:first-child){
         display: none;
@@ -298,5 +324,8 @@ textarea{
     }
     .blog-container{
         width: 20rem;
+    }
+    .services-container{
+        grid-template-columns: auto;
     }
 }
