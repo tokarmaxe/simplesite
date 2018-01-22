@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body onload="">
     <header>
         <div class="logo">
             <a href="index.html"><img class="graficlogo" src="img/head-background.jpg" alt="Home Page"></a>
@@ -25,7 +25,15 @@
         </nav>
     </header>
     <main>
-        <img src="img/web.jpg" class="mw-100">
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <img id="1" src="img/web.jpg" class="mw-100">
+                <img src="img/webslide2.png" class="mw-100">
+                <img src="img/webslide1.png" class="mw-100">
+            </div>
+            <span class="prev" onclick="plusSlide(-1)">&#10094</span>
+            <span class="next" onclick="plusSlide(1)">&#10095</span>
+        </div>
         <div class="advantages__container">
             <div class="advantages">
                 <div class="advantages__item">
@@ -83,6 +91,32 @@
         </div>
         <p>WebDeveloperBlog 2018</p>
     </footer>
+    <script type="text/javascript">
+        var slideIndex=1;
+        showSlides(slideIndex);
+
+        function plusSlide(n){
+            showSlides(slideIndex+=n);
+        }
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mw-100");
+
+            if(n>slides.length)
+            {
+                slideIndex=1;
+            }
+            if(n<1)
+            {
+                slideIndex=slides.length;
+            }
+            for (i=0; i<slides.length;i++)
+            {
+                slides[i].style.display="none";
+            }
+            slides[slideIndex-1].style.display="block";
+        }
+    </script>
     <script src="js/script.js"></script>
 </body>
 </html>

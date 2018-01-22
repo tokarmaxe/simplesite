@@ -273,7 +273,24 @@ textarea{
     grid-template-columns: auto auto;
     grid-gap: 50px 100px;
 }
-
+.next, .prev{
+    position: absolute;
+    cursor: pointer;
+    top:50%;
+    width: auto;
+}
+.slideshow-container {
+    position: relative;
+}
+.mySlides{
+    position: relative;
+}
+.next{
+    right: 0;
+}
+.mySlides img{
+    display: block;
+}
 @media screen and (max-width:768px) {
     .topnav a:not(:first-child){
         display: none;
